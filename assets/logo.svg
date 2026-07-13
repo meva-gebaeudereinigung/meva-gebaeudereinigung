@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 84" role="img" aria-label="MEVA Gebäudereinigung und Hausmeisterservice">
+  <defs>
+    <linearGradient id="drop" x1="0.15" y1="0.05" x2="0.9" y2="0.95">
+      <stop offset="0" stop-color="#17b8b4"/>
+      <stop offset="1" stop-color="#16d2ce"/>
+    </linearGradient>
+  </defs>
+
+  <!-- water ripples under the droplet -->
+  <g fill="none" stroke="#15c8c4" stroke-linecap="round">
+    <ellipse cx="42" cy="59" rx="30" ry="5.4" stroke-width="2.4" opacity="0.9"/>
+    <ellipse cx="42" cy="59" rx="17" ry="3" stroke-width="2.2" opacity="0.55"/>
+  </g>
+
+  <!-- droplet -->
+  <path d="M42 7 C42 7 61 31 61 41 A19 19 0 1 1 23 41 C23 31 42 7 42 7 Z" fill="url(#drop)"/>
+  <!-- inner highlight -->
+  <path d="M35 24 C31 30 29 36 30 43" fill="none" stroke="#eafffe" stroke-width="2.4" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- wordmark -->
+  <text x="90" y="49" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="1.5" fill="#12b3af">MEVA</text>
+  <text x="92" y="66" font-family="'Manrope', system-ui, sans-serif" font-size="8.4" font-weight="600" letter-spacing="1.35" fill="#5a6672">GEBÄUDEREINIGUNG &amp; HAUSMEISTERSERVICE</text>
+</svg>

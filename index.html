@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEVA Gebäudereinigung & Hausmeisterservice | Münster</title>
+  <meta name="description" data-i18n="meta.description"
+    content="Professionelle Gebäudereinigung & Hausmeisterservice in Münster und Umgebung. Zuverlässig, gründlich und werterhaltend – für Büros, Praxen, Immobilien und Baustellen." />
+  <meta name="theme-color" content="#1a2635" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- ============ ICON SPRITE (clean line icons, corporate) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.3V16c0 1.2 2.7 2.6 6 2.6s6-1.4 6-2.6v-4.7"/><path d="M22 9v5"/></symbol>
+      <symbol id="i-flex" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8"/><path d="M20 3.5V8h-4.5"/><path d="M20 12a8 8 0 0 1-13.7 5.7L4 16"/><path d="M4 20.5V16h4.5"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16"/><path d="M14 9h5a1 1 0 0 1 1 1v11"/><path d="M3 21h18"/><path d="M7.5 8h3M7.5 12h3M7.5 16h3M17 13h.5M17 17h.5"/></symbol>
+      <symbol id="i-stairs" viewBox="0 0 24 24"><path d="M21 5h-4v4h-4v4H9v4H5v3"/><path d="M3 21h4v-3"/></symbol>
+      <symbol id="i-hardhat" viewBox="0 0 24 24"><path d="M2.5 18.5h19"/><path d="M4.5 18v-2.5a7.5 7.5 0 0 1 15 0V18"/><path d="M10 6.6V4.2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2.4"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.7 4.3L17 9l-4.3 1.7L11 15l-1.7-4.3L5 9l4.3-1.7L11 3Z"/><path d="M18.5 14l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z"/></symbol>
+      <symbol id="i-window" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="1.5"/><path d="M4 12h16M12 3.5v17"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M15 5.2a3.8 3.8 0 0 0-5 5L3.4 16.8a1.6 1.6 0 0 0 0 2.3l1.5 1.5a1.6 1.6 0 0 0 2.3 0L13.8 14a3.8 3.8 0 0 0 5-5l-2.4 2.4L14 10.8l-.6-2.4L15 5.2Z"/></symbol>
+      <symbol id="i-medical" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-5.8 7-11.5a7 7 0 1 0-14 0c0 5.7 7 11.5 7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.4 3.2h3l1.5 5-2 1.4a11 11 0 0 0 5 5l1.4-2 5 1.5v3a2 2 0 0 1-2.1 2A16.2 16.2 0 0 1 4.5 5.3a2 2 0 0 1 1.9-2.1Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5.5l6.5 6.5-6.5 6.5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="MEVA Gebäudereinigung Startseite">
+        <img src="assets/logo.svg" alt="MEVA Gebäudereinigung & Hausmeisterservice" class="brand-logo" id="brandLogo" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+        <a href="#home" data-i18n="nav.home">Startseite</a>
+        <a href="#about" data-i18n="nav.about">Über uns</a>
+        <a href="#services" data-i18n="nav.services">Leistungen</a>
+        <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+        <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Angebot anfordern</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Sprache wählen">
+          <button type="button" data-lang="de" class="active" aria-pressed="true">DE</button>
+          <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Gebäudereinigung in Münster & Umgebung</span>
+          <h1 data-i18n="hero.title">Professionelle Gebäudereinigung &amp; Hausmeisterservice in Münster und Umgebung.</h1>
+          <p class="hero-claim" data-i18n="hero.claim">Zuverlässig. Gründlich. Werterhaltend.</p>
+          <p class="hero-sub" data-i18n="hero.sub">Sauberkeit ist die Visitenkarte Ihres Unternehmens. MEVA sorgt mit maßgeschneiderten Reinigungskonzepten für strahlende Sauberkeit in Ihren Büros, Praxen, Immobilien und auf Ihren Baustellen. Nutzen Sie unsere Erfahrung für den Werterhalt Ihrer Objekte.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg"><span data-i18n="hero.cta">Jetzt unverbindliches Angebot anfordern</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="tel:+4917647679162" class="btn btn-ghost btn-lg" data-i18n="hero.call">Anrufen</a>
+          </div>
+          <ul class="hero-badges" aria-label="Vorteile">
+            <li><span class="dot"></span><span data-i18n="hero.badge1">Kostenlos & unverbindlich</span></li>
+            <li><span class="dot"></span><span data-i18n="hero.badge2">Inhabergeführt</span></li>
+            <li><span class="dot"></span><span data-i18n="hero.badge3">Umweltschonende Mittel</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="why section" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="why.kicker">Warum wir?</span>
+          <h2 data-i18n="why.title">Drei gute Gründe für MEVA</h2>
+        </div>
+        <div class="cards-3">
+          <article class="feature-card">
+            <div class="feature-icon"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></div>
+            <h3 data-i18n="why.c1.title">Zuverlässigkeit & Pünktlichkeit</h3>
+            <p data-i18n="why.c1.text">Wir reinigen genau dann, wenn es Ihren Betriebsablauf nicht stört – diskret und zuverlässig.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg></div>
+            <h3 data-i18n="why.c2.title">Geschultes Personal</h3>
+            <p data-i18n="why.c2.text">Unser Team arbeitet effizient, gründlich und mit modernsten, umweltschonenden Reinigungsmitteln.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><svg class="ico" aria-hidden="true"><use href="#i-flex"/></svg></div>
+            <h3 data-i18n="why.c3.title">Flexibilität</h3>
+            <p data-i18n="why.c3.text">Ob tägliche Unterhaltsreinigung oder einmalige Grundreinigung – wir passen uns Ihren Wünschen an.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-media" aria-hidden="true">
+          <div class="about-card-stack">
+            <div class="stat">
+              <strong data-i18n="about.stat1.num">100%</strong>
+              <span data-i18n="about.stat1.label">Inhabergeführt</span>
+            </div>
+            <div class="stat">
+              <strong data-i18n="about.stat2.num">7</strong>
+              <span data-i18n="about.stat2.label">Leistungsbereiche</span>
+            </div>
+            <div class="stat">
+              <strong>Münster</strong>
+              <span data-i18n="about.stat3.label">& Umgebung</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="kicker" data-i18n="about.kicker">Über uns</span>
+          <h2 data-i18n="about.title">Ihr starker Partner für Sauberkeit und Hygiene</h2>
+          <p data-i18n="about.p1">Als inhabergeführte Gebäudereinigungsfirma steht MEVA für höchste Qualitätsstandards, Vertrauen und perfekten Service. Wir wissen, dass jedes Objekt individuelle Anforderungen hat. Deshalb setzen wir auf persönliche Beratung vor Ort und ein festes Team, das Ihre Immobilie genau kennt.</p>
+          <p data-i18n="about.p2">Ob Gewerbe, Industrie oder private Liegenschaften: Wir entlasten Sie im Alltag, damit Sie sich auf Ihr Kerngeschäft konzentrieren können. Sauberkeit ist für uns kein Zufall, sondern das Ergebnis von Struktur, Leidenschaft und Fachkompetenz.</p>
+          <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Persönliche Beratung anfragen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-i18n="services.kicker">Unsere Leistungen</span>
+          <h2 data-i18n="services.title">Ein Partner für jede Reinigungsaufgabe</h2>
+          <p class="section-lead" data-i18n="services.lead">Von der täglichen Unterhaltsreinigung bis zum Rundum-Hausmeisterservice – alles aus einer Hand.</p>
+        </div>
+
+        <div class="cards-service">
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg></div>
+            <h3 data-i18n="svc.office.title">Büroreinigung (Unterhaltsreinigung)</h3>
+            <p data-i18n="svc.office.text">Ein sauberes Büro fördert das Wohlbefinden und die Produktivität Ihrer Mitarbeiter. Wir sorgen für staubfreie Arbeitsplätze, hygienische Sanitäranlagen und saubere Küchenbereiche.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.office.tasks">Mülleimer leeren, Staub wischen, Bodenpflege (Saugen/Wischen), Desinfektion von Kontaktflächen.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-stairs"/></svg></div>
+            <h3 data-i18n="svc.stairs.title">Treppenhausreinigung</h3>
+            <p data-i18n="svc.stairs.text">Das Treppenhaus ist der erste Eindruck eines Gebäudes. Wir reinigen Wohnanlagen und Gewerbeobjekte regelmäßig und gründlich, um einen gepflegten Gesamteindruck zu garantieren und Unfälle durch Rutschgefahr zu vermeiden.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.stairs.tasks">Feuchtwischen der Stufen, Reinigung von Handläufen, Fußmatten, Briefkastenanlagen und Eingangstüren.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-hardhat"/></svg></div>
+            <h3 data-i18n="svc.construction.title">Baureinigung / Bauendreinigung</h3>
+            <p data-i18n="svc.construction.text">Nach dem Bau oder der Renovierung kommt der Feinschliff. Wir entfernen Handwerker-Schmutz, Baustaub, Farb- und Mörtelreste sowie Verpackungsmaterialien, damit das Objekt bezugsfertig ist.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.construction.tasks">Baugrobreinigung während der Bauphase, Baufeinreinigung vor der Übergabe.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg></div>
+            <h3 data-i18n="svc.deep.title">Grundreinigung</h3>
+            <p data-i18n="svc.deep.text">Wenn die normale Unterhaltsreinigung nicht mehr ausreicht, hilft unsere intensive Grundreinigung. Wir entfernen hartnäckige Verschmutzungen und abgenutzte Pflegefilme tiefenwirksam.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.deep.tasks">Intensivreinigung von Hartböden, Teppichböden, Nischen und schwer zugänglichen Bereichen.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-window"/></svg></div>
+            <h3 data-i18n="svc.glass.title">Glas- und Fensterreinigung</h3>
+            <p data-i18n="svc.glass.text">Wir bringen den Durchblick zurück. Streifenfreie Reinigung von Fenstern, Schaufenstern, Glasfassaden und Rahmen.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.glass.tasks">Fensterreinigung inklusive Rahmenwäsche, Reinigung von Glasvordächern und Trennwänden.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg></div>
+            <h3 data-i18n="svc.facility.title">Hausmeisterservice</h3>
+            <p data-i18n="svc.facility.text">Rundum-Sorglos-Paket für Ihre Immobilie. Wir kümmern uns um die technische Betreuung, Kleinreparaturen und die allgemeine Ordnung auf Ihrem Grundstück.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.facility.tasks">Objektüberwachung, Leuchtmitteltausch, Mülltonnenservice, Grünpflege und Koordination von Handwerkern.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg class="ico" aria-hidden="true"><use href="#i-medical"/></svg></div>
+            <h3 data-i18n="svc.medical.title">Praxisreinigung</h3>
+            <p data-i18n="svc.medical.text">In Arztpraxen und medizinischen Einrichtungen steht die Gesundheit an erster Stelle. Wir sorgen für eine makellose Sauberkeit und fachgerechte Desinfektion, damit sich Ihre Patienten sicher und Ihre Mitarbeiter wohlfühlen.</p>
+            <p class="service-list-label" data-i18n="svc.tasksLabel">Leistungen:</p>
+            <p class="service-list" data-i18n="svc.medical.tasks">Reinigung und Desinfektion von Behandlungsräumen, Patientenliegen, Wartezimmern, Sanitäranlagen und Desinfektion aller Kontaktflächen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="kicker" data-i18n="contact.kicker">Kontakt & Angebot</span>
+          <h2 data-i18n="contact.title">Lassen Sie uns Ihr Objekt zum Strahlen bringen!</h2>
+          <p data-i18n="contact.lead">Haben Sie Fragen zu unseren Dienstleistungen oder wünschen Sie ein individuelles, kostenloses Angebot? Wir beraten Sie gerne unverbindlich vor Ort.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="ci-icon"><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg></span>
+              <div>
+                <strong>MEVA-Gebäudereinigung & Hausmeisterservice</strong>
+                <span>Vahit Alacacioglu</span>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div>
+                <a href="https://maps.google.com/?q=Bremer+Straße+55,+48155+Münster" target="_blank" rel="noopener">Bremer Straße 55, 48155 Münster</a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div>
+                <a href="tel:+4917647679162">0176 47679162</a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div>
+                <a href="mailto:mevagebaeudereinigung@gmail.com">mevagebaeudereinigung@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+
+          <p class="contact-quote" data-i18n="contact.quote">„Wenn Sie Ergebnisse sehen wollen …“</p>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="offerForm" novalidate>
+            <h3 data-i18n="form.title">Online-Angebotsformular</h3>
+            <p class="form-note" data-i18n="form.note">Füllen Sie das Formular aus – wir melden uns schnellstmöglich mit einem unverbindlichen Angebot.</p>
+
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Name / Firma</label>
+              <input type="text" id="f-name" name="name" autocomplete="organization" required />
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-email" data-i18n="form.email">E-Mail-Adresse</label>
+                <input type="email" id="f-email" name="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="f-phone" data-i18n="form.phone">Telefonnummer</label>
+                <input type="tel" id="f-phone" name="phone" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-service" data-i18n="form.service">Gewünschte Leistung</label>
+              <select id="f-service" name="service">
+                <option value="" data-i18n="form.service.placeholder">Bitte wählen …</option>
+                <option data-i18n="svc.office.title">Büroreinigung (Unterhaltsreinigung)</option>
+                <option data-i18n="svc.stairs.title">Treppenhausreinigung</option>
+                <option data-i18n="svc.construction.title">Baureinigung / Bauendreinigung</option>
+                <option data-i18n="svc.deep.title">Grundreinigung</option>
+                <option data-i18n="svc.glass.title">Glas- und Fensterreinigung</option>
+                <option data-i18n="svc.facility.title">Hausmeisterservice</option>
+                <option data-i18n="svc.medical.title">Praxisreinigung</option>
+                <option data-i18n="form.service.other">Sonstiges / Beratung</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message" data-i18n="form.message">Nachricht / Objektdetails</label>
+              <textarea id="f-message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="form.submit">Angebot anfordern</button>
+            <p class="form-hint" data-i18n="form.hint">Mit dem Absenden öffnet sich Ihr E-Mail-Programm mit der vorausgefüllten Anfrage.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="MEVA Gebäudereinigung & Hausmeisterservice" class="footer-logo" id="footerLogo" />
+        <p data-i18n="footer.tagline">Zuverlässig. Gründlich. Werterhaltend.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">Kontakt</h4>
+        <p>MEVA-Gebäudereinigung & Hausmeisterservice</p>
+        <p>Bremer Straße 55, 48155 Münster</p>
+        <p><a href="tel:+4917647679162">0176 47679162</a></p>
+        <p><a href="mailto:mevagebaeudereinigung@gmail.com">mevagebaeudereinigung@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.linksTitle">Navigation</h4>
+        <p><a href="#home" data-i18n="nav.home">Startseite</a></p>
+        <p><a href="#about" data-i18n="nav.about">Über uns</a></p>
+        <p><a href="#services" data-i18n="nav.services">Leistungen</a></p>
+        <p><a href="#contact" data-i18n="nav.contact">Kontakt</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span id="year">2026</span> MEVA-Gebäudereinigung & Hausmeisterservice</span>
+        <span class="footer-legal"><a href="#" id="impressumLink" data-i18n="footer.impressum">Impressum</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
