@@ -89,7 +89,11 @@ const I18N = {
     "footer.tagline": "Zuverlässig. Gründlich. Werterhaltend.",
     "footer.contactTitle": "Kontakt",
     "footer.linksTitle": "Navigation",
-    "footer.impressum": "Impressum"
+    "footer.impressum": "Impressum",
+
+    "imp.pageTitle": "Impressum",
+    "imp.back": "← Zurück zur Startseite",
+    "imp.note": "Rechtliche Angaben gemäß den gesetzlichen Vorgaben (§ 5 DDG, § 18 Abs. 2 MStV)."
   },
 
   tr: {
@@ -178,7 +182,11 @@ const I18N = {
     "footer.tagline": "Güvenilir. Titiz. Değer koruyucu.",
     "footer.contactTitle": "İletişim",
     "footer.linksTitle": "Navigasyon",
-    "footer.impressum": "Künye"
+    "footer.impressum": "Künye",
+
+    "imp.pageTitle": "Künye (Impressum)",
+    "imp.back": "← Ana sayfaya dön",
+    "imp.note": "Alman yasal gerekliliklerine göre bilgiler (§ 5 DDG, § 18 MStV) – yasa gereği Almanca olarak sunulmuştur."
   },
 
   en: {
@@ -267,7 +275,11 @@ const I18N = {
     "footer.tagline": "Reliable. Thorough. Value-preserving.",
     "footer.contactTitle": "Contact",
     "footer.linksTitle": "Navigation",
-    "footer.impressum": "Legal notice"
+    "footer.impressum": "Legal notice",
+
+    "imp.pageTitle": "Legal Notice (Impressum)",
+    "imp.back": "← Back to homepage",
+    "imp.note": "Information pursuant to German law (§ 5 DDG, § 18 MStV), provided in German as legally required."
   }
 };
 
@@ -408,17 +420,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Impressum placeholder
-  const imp = document.getElementById("impressumLink");
-  if (imp) {
-    imp.addEventListener("click", (e) => {
-      e.preventDefault();
-      const msg = {
-        de: "Impressum-Seite folgt in Kürze.",
-        tr: "Künye sayfası yakında eklenecek.",
-        en: "Legal notice page coming soon."
-      }[currentLang];
-      alert(msg);
-    });
-  }
 });

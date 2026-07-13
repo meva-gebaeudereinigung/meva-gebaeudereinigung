@@ -292,6 +292,19 @@ a:hover { color: var(--brand); }
 .footer-bottom .container { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; padding-bottom: 18px; flex-wrap: wrap; gap: 8px; font-size: .87rem; }
 .footer-legal a { color: rgba(255,255,255,.6); }
 
+/* ---------- Legal / Impressum page ---------- */
+.legal { padding: clamp(48px, 8vw, 96px) 0 clamp(56px, 8vw, 100px); background: var(--bg); }
+.legal-inner { max-width: 760px; }
+.legal .back-link { display: inline-block; font-family: var(--font-head); font-weight: 600; font-size: .95rem; margin-bottom: 26px; }
+.legal h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 10px; }
+.legal-note { color: var(--muted); font-size: .95rem; margin: 0 0 40px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+.legal h2 { font-size: 1.2rem; margin: 34px 0 8px; }
+.legal p { margin: 0 0 12px; }
+.legal .addr { line-height: 1.9; }
+.legal .addr strong { color: var(--ink); font-family: var(--font-head); }
+.legal a { word-break: break-word; }
+.legal .small { font-size: .9rem; color: var(--muted); }
+
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
