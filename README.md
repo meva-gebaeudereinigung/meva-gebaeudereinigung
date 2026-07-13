@@ -24,22 +24,26 @@ python3 -m http.server 8000
 
 ## Hosting & deployment
 
-The site is hosted **free on GitHub Pages** from the repo
+The site is hosted **free on Netlify** (site `meva-gebaeudereinigung`,
+`meva-gebaeudereinigung.netlify.app`). Source code lives in the GitHub repo
 [`meva-gebaeudereinigung/meva-gebaeudereinigung`](https://github.com/meva-gebaeudereinigung/meva-gebaeudereinigung)
-(owned by the `meva-gebaeudereinigung` GitHub organization; branch `main`, root folder).
+(owned by the `meva-gebaeudereinigung` GitHub org).
 
-- **Live domain:** `mevagebäudereinigung.de` (punycode `xn--mevagebudereinigung-mwb.de`).
-  The custom domain is set via the `CNAME` file — **do not delete it**.
-- **To update the live site:** edit files, then:
+- **Live domain:** `mevagebäudereinigung.de` (punycode `xn--mevagebudereinigung-mwb.de`),
+  HTTPS via an auto-renewing Let's Encrypt certificate. `www` and `http` redirect to it.
+- **To update the live site** (current setup = manual deploy of the web files):
   ```bash
-  git add -A && git commit -m "your message" && git push
+  netlify deploy --prod --dir . --site meva-gebaeudereinigung --no-build
   ```
-  GitHub Pages rebuilds automatically within a minute or two.
+  (Or, if Git auto-deploy is later connected in the Netlify dashboard, a plain
+  `git push` will publish automatically.)
+
+> GitHub Pages was used initially but **abandoned** because it can't issue SSL
+> certificates for internationalized (ä / punycode) domains. Pages is now disabled.
 
 ### DNS (set once, in GoDaddy)
-Apex `@` → four A records: `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`.
-`www` → CNAME `meva-gebaeudereinigung.github.io`. After DNS resolves, enable
-**Settings → Pages → Enforce HTTPS** in the repo.
+Apex `@` → one A record: `75.2.60.5` (Netlify). `www` → CNAME
+`meva-gebaeudereinigung.netlify.app`. Netlify provisions/renews HTTPS automatically.
 
 ## The contact form
 
@@ -48,13 +52,11 @@ The form builds a pre-filled email and opens the visitor's mail app addressed to
 delivers submissions without the visitor's mail app (e.g. Formspree), replace the
 `mailto:` block near the bottom of `script.js`.
 
-## Replacing the placeholder logo
+## Logo
 
-`assets/logo.svg` is a temporary placeholder. To use the real logo:
-1. Export the logo from the brief PDF as **`logo.svg`** (preferred) or `logo.png`.
-2. Drop it into the `assets/` folder, overwriting the placeholder.
-3. If it's a PNG, change `assets/logo.svg` → `assets/logo.png` in `index.html`
-   (two spots: header and footer).
+`assets/logo.svg` is a faithful SVG recreation of the real MEVA logo (teal water
+droplet with ripples + wordmark), rebuilt from the brief PDF. `assets/favicon.svg`
+matches it. Brand colors (teal `#15C8C4`, navy `#1A2635`) live in `:root` in `styles.css`.
 
 ## Adjusting the colours
 
