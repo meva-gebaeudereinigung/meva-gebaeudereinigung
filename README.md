@@ -25,8 +25,8 @@ python3 -m http.server 8000
 ## Hosting & deployment
 
 The site is hosted **free on GitHub Pages** from the repo
-[`tunahanbayindir/meva-gebaeudereinigung`](https://github.com/tunahanbayindir/meva-gebaeudereinigung)
-(branch `main`, root folder).
+[`meva-gebaeudereinigung/meva-gebaeudereinigung`](https://github.com/meva-gebaeudereinigung/meva-gebaeudereinigung)
+(owned by the `meva-gebaeudereinigung` GitHub organization; branch `main`, root folder).
 
 - **Live domain:** `mevagebäudereinigung.de` (punycode `xn--mevagebudereinigung-mwb.de`).
   The custom domain is set via the `CNAME` file — **do not delete it**.
@@ -38,7 +38,7 @@ The site is hosted **free on GitHub Pages** from the repo
 
 ### DNS (set once, in GoDaddy)
 Apex `@` → four A records: `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`.
-`www` → CNAME `tunahanbayindir.github.io`. After DNS resolves, enable
+`www` → CNAME `meva-gebaeudereinigung.github.io`. After DNS resolves, enable
 **Settings → Pages → Enforce HTTPS** in the repo.
 
 ## The contact form
