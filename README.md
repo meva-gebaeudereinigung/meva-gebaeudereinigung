@@ -5,20 +5,25 @@ MEVA-Gebäudereinigung & Hausmeisterservice in Münster.
 
 ## Files
 
+The deployed website lives in **`public/`** (this is Netlify's publish directory,
+set in `netlify.toml`). Everything outside `public/` (README, config) is not served.
+
 | File | Purpose |
 |------|---------|
-| `index.html` | Page structure. Every text node is keyed with `data-i18n` for translation. |
-| `styles.css` | All styling. The colour palette lives in `:root` at the top — see below. |
-| `script.js` | Language switching, mobile menu, scroll animations, contact-form → email. |
-| `assets/logo.svg` | Header/footer logo. **Placeholder** — replace with the real logo (see below). |
-| `assets/favicon.svg` | Browser-tab icon. |
+| `public/index.html` | Page structure. Every text node is keyed with `data-i18n` for translation. |
+| `public/impressum.html` | Legal notice (Impressum) page. |
+| `public/styles.css` | All styling. The colour palette lives in `:root` at the top. |
+| `public/script.js` | Language switching, mobile menu, scroll animations, contact-form → email. |
+| `public/assets/logo.svg` | Header/footer logo (SVG recreation of the real MEVA logo). |
+| `public/assets/favicon.svg` | Browser-tab icon. |
+| `netlify.toml` | Tells Netlify to publish the `public/` folder. |
 
 ## Run it locally
 
-Just open `index.html` in a browser, or serve the folder:
+Serve the `public/` folder:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 8000 -d public
 # then visit http://localhost:8000
 ```
 
@@ -31,12 +36,12 @@ The site is hosted **free on Netlify** (site `meva-gebaeudereinigung`,
 
 - **Live domain:** `mevagebäudereinigung.de` (punycode `xn--mevagebudereinigung-mwb.de`),
   HTTPS via an auto-renewing Let's Encrypt certificate. `www` and `http` redirect to it.
-- **To update the live site** (current setup = manual deploy of the web files):
+- **To update the live site:** once Git auto-deploy is connected in the Netlify
+  dashboard, just `git push` and Netlify rebuilds automatically. Manual deploy
+  fallback:
   ```bash
-  netlify deploy --prod --dir . --site meva-gebaeudereinigung --no-build
+  netlify deploy --prod --dir public --site meva-gebaeudereinigung --no-build
   ```
-  (Or, if Git auto-deploy is later connected in the Netlify dashboard, a plain
-  `git push` will publish automatically.)
 
 > GitHub Pages was used initially but **abandoned** because it can't issue SSL
 > certificates for internationalized (ä / punycode) domains. Pages is now disabled.

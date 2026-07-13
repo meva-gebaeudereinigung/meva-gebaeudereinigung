@@ -1,0 +1,4 @@
+# Netlify configuration — static site, no build step.
+# The site's web files live in ./public and are served as-is.
+[build]
+  publish = "public"
