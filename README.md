@@ -22,6 +22,25 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
+## Hosting & deployment
+
+The site is hosted **free on GitHub Pages** from the repo
+[`tunahanbayindir/meva-gebaeudereinigung`](https://github.com/tunahanbayindir/meva-gebaeudereinigung)
+(branch `main`, root folder).
+
+- **Live domain:** `mevagebäudereinigung.de` (punycode `xn--mevagebudereinigung-mwb.de`).
+  The custom domain is set via the `CNAME` file — **do not delete it**.
+- **To update the live site:** edit files, then:
+  ```bash
+  git add -A && git commit -m "your message" && git push
+  ```
+  GitHub Pages rebuilds automatically within a minute or two.
+
+### DNS (set once, in GoDaddy)
+Apex `@` → four A records: `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`.
+`www` → CNAME `tunahanbayindir.github.io`. After DNS resolves, enable
+**Settings → Pages → Enforce HTTPS** in the repo.
+
 ## The contact form
 
 The form builds a pre-filled email and opens the visitor's mail app addressed to
