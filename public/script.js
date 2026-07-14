@@ -38,8 +38,8 @@ const I18N = {
     "about.cta": "Persönliche Beratung anfragen",
     "about.stat1.num": "100%",
     "about.stat1.label": "Inhabergeführt",
-    "about.stat2.num": "7",
-    "about.stat2.label": "Leistungsbereiche",
+    "about.stat2.num": "10+",
+    "about.stat2.label": "Jahre Erfahrung",
     "about.stat3.label": "& Umgebung",
 
     "services.kicker": "Unsere Leistungen",
@@ -132,8 +132,8 @@ const I18N = {
     "about.cta": "Kişisel danışmanlık isteyin",
     "about.stat1.num": "%100",
     "about.stat1.label": "Sahibi yönetiminde",
-    "about.stat2.num": "7",
-    "about.stat2.label": "Hizmet alanı",
+    "about.stat2.num": "10+",
+    "about.stat2.label": "Yıllık deneyim",
     "about.stat3.label": "& çevresi",
 
     "services.kicker": "Hizmetlerimiz",
@@ -226,8 +226,8 @@ const I18N = {
     "about.cta": "Request a personal consultation",
     "about.stat1.num": "100%",
     "about.stat1.label": "Owner-operated",
-    "about.stat2.num": "7",
-    "about.stat2.label": "Service areas",
+    "about.stat2.num": "10+",
+    "about.stat2.label": "Years of experience",
     "about.stat3.label": "& surroundings",
 
     "services.kicker": "Our services",
